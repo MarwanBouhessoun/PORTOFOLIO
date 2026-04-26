@@ -1,0 +1,76 @@
+/*
+** PORTOFOLIO, 2026
+** style
+** File description:
+** style
+*/
+
+body {
+    background-color: #1e1e2f;
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    margin-top: 100px;
+}
+
+h1 {
+    color: #00d2ff;
+}
+
+#liste-projets {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.carte-projet {
+    background-color: #2a2a40;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.carte-projet:hover {
+    transform: translateY(-10px);
+}
+
+.carte-projet img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.contenu-carte {
+    padding: 20px;
+    text-align: left;
+}
+
+.contenu-carte h3 {
+    margin-top: 0;
+    color: #00d2ff;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav a {
+    color: #00d2ff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ffffff;
+}
